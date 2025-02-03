@@ -18,8 +18,18 @@
   </head>
   <body class="font-barlow">
     <header>
-      <section id="banar">
-        <div id="bg-layer">
+      <section id="banar" class="relative">
+        <span id="top-left" class="red-circle"></span>
+        <span id="top-right" class="red-circle"></span>
+        <span id="bottom-right" class="red-circle"></span>
+        <img class="bg-img" src="./asset/Console.png" alt="" />
+        <div id="bg-layer" class="bg-layers">
+          <img src="./asset/Rectangle.png" class="absolute opacity-60" alt="" />
+          <h2
+            class="console-layer"
+          >
+            Console
+          </h2>
           <div id="content-section">
             <!-- vertical div -->
             <div id="vertical-div">
@@ -31,18 +41,19 @@
               </div>
               <!-- <h2 id="console-txtt" class="">Console</h2> -->
             </div>
+
             <!-- Horizontal Div -->
             <div id="horixontal-div" class="flex relative pt-10">
               <!-- <div id="img-sec" class="relative -left-52 basis-1/4">
                 <img class="" src="./asset/Console.png" alt="" />
               </div> -->
               <img
-                class="absolute -left-[330px] w-[800px]"
+                class="absolute -left-[330px]"
                 src="./asset/Console.png"
                 alt=""
               />
               <div id="content-sec" class="pl-40 space-y-4">
-                <h1 class="text-7xl font-bold">Dual Sence</h1>
+                <h1 class="text-7xl font-bold uppercase">Dual Sence</h1>
                 <h3 class="text-2xl font-normal text-gray-300 relative -top-4">
                   Wireless Controler
                 </h3>
@@ -66,15 +77,21 @@
                     class="w-[22px] rounded-full bg-yellow-600"
                   ></span>
                 </div>
-                <div id="buuton-groups" class="flex gap-28 pt-6">
+                <p class="text-[12px] text-gray-300 w-7/12">
+                  Each piece of hardware feels sturdy and competently made, with
+                  a special note of praise for the back paddles that are
+                  included.
+                </p>
+                <div id="buuton-groups" class="flex gap-28 pt-2 items-center">
                   <button
                     class="px-6 py-2 rounded-xl bg-red-600 border-2 border-red-500"
                   >
                     Add To Cart
                   </button>
-                  <p> 
-                    <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
-                    Add To Wishlist</p>
+                  <p>
+                    <i class="fa-solid fa-heart" style="color: #ff0000"></i>
+                    Add To Wishlist
+                  </p>
                 </div>
               </div>
             </div>

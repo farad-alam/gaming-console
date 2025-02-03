@@ -6,6 +6,12 @@ module.exports = {
       fontFamily: {
         barlow: ["Barlow", "serif"],
       },
+      textStrokeWidth: {
+        DEFAULT: "3px",
+        sm: "0.5px",
+        md: "2px",
+        lg: "4px",
+      },
     },
   },
   plugins: [],

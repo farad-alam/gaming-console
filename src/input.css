@@ -2,10 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-#banar {
-  @apply w-full h-screen bg-slate-900 text-white;
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(245, 169, 169);
+     -webkit-text-fill-color: transparent;
+  }
+  .text-stroke-white {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
 }
 
+
+#banar {
+  @apply w-full h-screen bg-slate-900 text-white overflow-hidden;
+}
+
+.red-circle {
+  @apply absolute bg-red-700 w-[600px] h-56 rounded-full opacity-95 blur-[100px];
+}
+#top-left {
+  @apply -left-20 -top-6;
+}
+#top-right {
+  @apply right-96 top-0;
+}
+#bottom-right {
+  @apply -bottom-9 -right-9;
+}
+.bg-img {
+  @apply absolute top-44 left-[620px] -rotate-45 opacity-80;
+}
+.bg-layers {
+  @apply absolute bg-slate-950/50 w-full h-screen z-20;
+}
+.console-layer{
+  @apply absolute uppercase text-[140px] -left-[200px] top-[240px] leading-none text-stroke opacity-95 font-bold rotate-90
+}
 #content-section {
   @apply relative w-4/5 h-screen mx-auto grid grid-cols-12 grid-rows-12 gap-3 ml-64;
 }
@@ -20,4 +54,3 @@
 .console-txt {
   @apply text-[120px] font-semibold uppercase rotate-180 font-barlow [writing-mode:vertical-rl] leading-[110px];
 }
-
