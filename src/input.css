@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#banar {
+  @apply w-full h-screen bg-slate-900 text-white;
+}
+
+#content-section {
+  @apply relative w-4/5 h-screen mx-auto grid grid-cols-12 grid-rows-12 gap-3 ml-64;
+}
+
+#vertical-div {
+  @apply bg-red-600 col-span-5 row-start-2 row-span-10 rounded-xl;
+}
+#horixontal-div {
+  @apply bg-slate-950/40 backdrop-blur-3xl col-span-7 row-start-3 row-span-8 rounded-xl
+    relative -left-64;
+}
+.console-txt {
+  @apply text-[120px] font-semibold uppercase rotate-180 font-barlow [writing-mode:vertical-rl] leading-[110px];
+}
+
